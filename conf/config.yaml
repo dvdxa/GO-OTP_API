@@ -1,0 +1,29 @@
+server:
+  name: OTP-API
+  host: "0.0.0.0"
+  port: "8080"
+  secretKey: "NU$V'm3%k_B^~cmyeB(ax],Mi*vJ5/"
+  writetimeout: 15
+  readtimeout: 15
+  retryAfter: 180
+  banDuration: 300
+  validateLimit: 5
+
+adapter:
+  login: "login"
+  password:
+  url: "localhost:2020"
+  text: ""
+  timeout: 10
+
+logger:
+  writetofile: false
+  format: text
+
+redis:
+  redisAddr: ""
+  minIdleConns: 200
+  poolSize: 12000
+  poolTimeout: 240
+  password: ""
+  db: 0
